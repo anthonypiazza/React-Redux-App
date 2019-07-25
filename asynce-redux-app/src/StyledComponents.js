@@ -2,13 +2,17 @@ import styled from 'styled-components';
 
 export const CoinDiv = styled.div`
     display: flex;
-    margin: 40px;
-    background-color: white;
-    color: #282c34;
+    margin: 40px 5%;
+    background-color: #898989;
+    color: white;
     font-size: 1rem;
     z-index: 50;
     align-items: center;
-    box-shadow: 0 2px 13px 0 rgba(250,250,250, 0.8);
+    box-shadow: 0 2px 13px 0 rgba(255, 190, 51, 0.8);
+    &:hover{
+        transform: scale(1.05);
+        cursor: pointer;
+    }
 `
 
 export const DataDiv = styled.div`
@@ -26,11 +30,12 @@ export const CoinSymbol = styled.img`
     height: 34px;
     width: auto;
     padding: 0px 5px;
-    border-right: 1px solid #282c34;
+    border-right: 1px solid white;
 `
 
 export const CoinData = styled.h5`
-    border-left: 1px solid #282c34;
-    border-right: 1px solid #282c34;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
     margin: 0px;
+    padding: 0px 10px;
 `
